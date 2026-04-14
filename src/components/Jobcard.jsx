@@ -1,7 +1,12 @@
+import data from '../data.json'
+
+console.log(data);
+
 
 export default function Jobcard() {
   return (
     <article data-modalidad="remoto" className="job-listing-card">
+    {data.map}
     <div>
       <h3>Ingeniero de Software</h3>
       <small>Tech Solutions Inc. | Remoto</small>
