@@ -1,3 +1,5 @@
+import Footer from "./components/Footer"
+import Header from "./components/Header"
 import Jobcard from "./components/Jobcard"
 
 function App() {
@@ -5,25 +7,7 @@ function App() {
 
   return (
     <>
-        <header>
-    <h1><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-        stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-        className="icon icon-tabler icons-tabler-outline icon-tabler-code">
-        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-        <path d="M7 8l-4 4l4 4" />
-        <path d="M17 8l4 4l-4 4" />
-        <path d="M14 4l-4 16" />
-      </svg>
-      DevJobs</h1>
-    <nav>
-      <a href="">Inicio</a>
-      <a href="empleos.html">Empleos</a>
-    </nav>
-    <div>
-      <a href="">Publicar Empleo</a>
-      <a href="">Iniciar Sesión</a>
-    </div>
-  </header>
+<Header/>
 
   <main>
     <section className="jobs-searchs">
@@ -97,10 +81,8 @@ function App() {
       </svg>
     </a>
   </nav>
-  <footer>
-    <small> &copy; 2025 DevJobs. Todos los derechos reservados.</small>
-  </footer>
 
+<Footer/>
     </>
   )
 }
