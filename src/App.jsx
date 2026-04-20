@@ -13,7 +13,7 @@ function App() {
   const [currentPage, setCurrentPage] =useState(1)
   const totalPages = Math.ceil(jobsData.length / RESULTS_PER_PAGE)
 const pageResults = jobsData.slice(
-  currentPage -1 * RESULTS_PER_PAGE, // Página 1 -> 0, Página 2 -> 5, Página 3 -> 10
+  (currentPage -1) * RESULTS_PER_PAGE, // Página 1 -> 0, Página 2 -> 5, Página 3 -> 10
   currentPage * RESULTS_PER_PAGE // Página 1 -> 5 Página 2 -> 10, Página 3 -> 15
 )
   const handlePageChange = (page)=>{
