@@ -1,11 +1,10 @@
 import { useState } from "react"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
-import Jobcard from "./components/Jobcard"
 import JobListings from "./components/JobListings"
 import Pagination from "./components/Pagination"
 import SearchFormSection from "./components/SearchFormSection"
-
+import jobsData from './data.json'
 function App() {
 
   const [currentPage, setCurrentPage] =useState(1)
@@ -22,7 +21,7 @@ function App() {
 
   <main>
 <SearchFormSection/>
-<JobListings/>
+<JobListings jobs={jobsData}/>
   </main>
 
 <Pagination

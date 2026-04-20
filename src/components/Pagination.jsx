@@ -51,6 +51,7 @@ const handleChangePage = (event)=>{
     </a>
    {pages.map(page=>(
    <a
+   key={page}
   data-page={page}
    href="#"
    className={currentPage=== page ? 'is-active' : ''} onClick={handleChangePage}>
